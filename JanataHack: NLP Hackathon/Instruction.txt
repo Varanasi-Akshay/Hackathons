@@ -1,0 +1,185 @@
+With more than 5000 submissions and 2500+ participants, we saw yet another JanataHack witnessing a lot of competition, sharing of interesting approaches by the top finishing hackers and of course loads and loads of learning for everyone involved.
+
+This time we have chosen Natural Language Processing as the theme for JanataHack. 
+
+Natural Language Processing (NLP) is basically how you can teach machines to understand human languages and extract meaning from text. Language as a structured medium of communication is what separates us human beings from animals. We are surrounded by text data all the time sourced from books, emails, blogs, social media posts, news and more. 
+
+Natural Language Processing is expected to be worth 30 Billion USD by 2024 with the past few years seeing immense improvements in terms of how well it is solving industry problems at scale.
+
+Brush up your skills in NLP and get ready for our longest JanataHack till date filled with loads of learning and competition. Here are a few free resources from Analytics Vidhya to help you get ready:
+
+    Introduction to Natural Language Processing Course (https://courses.analyticsvidhya.com/courses/Intro-to-NLP/?utm_source=janatahack-nlp-hackathon&utm_medium=Datahack)
+    Learning Path for NLP(https://www.analyticsvidhya.com/blog/2020/01/learning-path-nlp-2020/?utm_source=janatahack-nlp-hackathon&utm_medium=Datahack)
+    Comprehensive Guide on Text Classification (https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/?utm_source=janatahack-nlp-hackathon&utm_medium=Datahack)
+
+ 
+FAQs
+
+1. Where can I find the dataset and the problem statement for the hackathon?
+
+The contest will go live on the designated contest start date and time. There is a timer that is shown at the top of this page which shows the remaining time before the contest goes live. This is when you can access the problem statement and datasets from the problem statement tab.
+
+
+1. Are there any prizes/AV Points for this contest?
+
+This contest is purely for learning and practicing purpose and hence no participant is eligible for prize or AV points.
+
+ 
+
+2. Can I share my approach/code?
+
+Absolutely. You are encouraged to share your approach and code file with the community. There is even a facility at the leaderboard to share the link to your code/solution description.
+
+ 
+
+3. I am facing a technical issue with the platform/have a doubt regarding the problem statement. Where can I get support?
+
+Join the AV slack channel by clicking on 'Join Slack Live Chat' button and ask your query at channel: janata_hack
+
+
+Sentiment Analysis for Steam Reviews
+
+Steam is a video game digital distribution service with a vast community of gamers globally. A lot of gamers write reviews at the game page and have an option of choosing whether they would recommend this game to others or not. However, determining this sentiment automatically from text can help Steam to automatically tag such reviews extracted from other forums across the internet and can help them better judge the popularity of games.
+
+Given the review text with user recommendation and other information related to each game for 64 game titles, the task is to predict whether the reviewer recommended the game titles available in the test set on the basis of review text and other information.
+
+Game overview information for both train and test are available in single file game_overview.csv inside train.zip
+
+
+About Data Source:
+
+Steam Platform
+
+
+Data Dictionary 
+
+train.zip
+
+1. train.csv
+
+
+review_id
+	
+
+Unique ID for each review
+
+title
+	
+
+Title of the game
+
+year
+	
+
+Year in which the review was posted
+
+user_review
+	
+
+Full Text of the review posted by a user
+
+user_suggestion
+	
+
+(Target) Game marked Recommended(1) and Not Recommended(0) by the user
+
+
+2. game_overview.csv
+
+
+title
+	
+
+Title of the game
+
+developer
+	
+
+Name of the developer of the game
+
+publisher
+	
+
+Name of the publisher of the game
+
+tags
+	
+
+Popular user defined tags for the game
+
+overview
+	
+
+Overview of the game provided by the publisher.
+
+
+test.csv
+
+
+review_id
+	
+
+Unique ID for each review
+
+title
+	
+
+Title of the game
+
+year
+	
+
+Year in which the review was posted
+
+user_review
+	
+
+Full Text of the review posted by a user
+
+
+
+sample_submission.csv
+
+
+review_id
+	
+
+review_id  in order as given in test.csv
+
+user_suggestion
+	
+
+Your prediction whether the particular review was recommended (1) or not (0)
+
+Evaluation Metric
+
+Submissions are evaluated on binary F1 Score between the predicted and observed user suggestion for the reviews in the test set.
+
+
+Public and Private Split
+
+Test reviews are further divided into Public (40%) and Private (60%)
+
+    Your initial responses will be checked and scored on the Public data.
+    The final rankings would be based on your private score which will be published once the competition is over.
+
+ 
+Guidelines for Final Submission
+
+Please ensure that your final submission includes the following:
+
+    Solution file containing the predicted suggestion by user in the test dataset (format is given in sample submission csv)
+    Code file for reproducing the submission, note that it is mandatory to submit your code for a valid final submission
+
+Hackathon Rules
+
+    The final standings would be based on private leaderboard score
+    Setting the final submission is recommended. Without a final submission, the submission corresponding to best public score will be taken as the final submission
+    Use of external dataset or labels from open source will lead to disqualification from the leaderboard
+    Entries submitted after the contest is closed, will not be considered
+    Use of review_id as a part of model is not permitted
+    The code file pertaining to your final submission is mandatory while setting final submission
+    Throughout the hackathon, you are expected to respect fellow hackers and act with high integrity.
+
+
+
